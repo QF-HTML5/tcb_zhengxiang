@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>JavaScript</title>
+	<style>
+		table {
+			border-collapse: collapse;
+		}
+
+		td {
+			border: 1px solid;
+		}
+	</style>
+</head>
+
+<body>
+	<table id="tab">
+		<tr>
+			<td>电话</td>
+			<td>密码</td>
+		</tr>
+	</table>
+	<p>注册成功，请牢记注册信息</p>
+
+	<script type="text/javascript">
+		alert(document.cookie);
+		// cookie字符串截取
+		var arr = document.cookie.split('; ');
+		//获取表格
+		var oTable = document.getElementById("tab");
+		var json = JSON.parse(arr[1]);
+		//在表格中插入一行
+		var _tr = oTable.insertRow();
+		var _td = _tr.insertCell(); //在行内插入一个单元格
+		_td.innerHTML = json.number;
+		_td = _tr.insertCell();
+		_td.innerHTML = json.password;
+
+
+	</script>
+</body>
+
+</html>

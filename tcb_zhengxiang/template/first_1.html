@@ -1,0 +1,12 @@
+<%for(var i = 0;i <result.length;i++){%>
+    <li>
+        <a href="javascript:void(0)">
+            <div class="p_img">
+                <img data-original="<%=result[i].img_url%>" alt="">
+            </div>
+            <div class="p_name">
+                <%=result[i].model_alis%>
+            </div>
+        </a>
+    </li>
+    <%}%>

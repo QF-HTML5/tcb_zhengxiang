@@ -1,0 +1,16 @@
+<%for(var i=0;i <result.length; i++){%>
+    <li>
+        <a href="javascript:void(0)">
+            <div class="p_img2">
+                <img data-original="<%=result[i].thum_img.old%>" alt="">
+            </div>
+            <div class="p_name2">
+                <%=result[i].brand_name + result[i].model_name%>
+            </div>
+            <div class="pri">
+                ￥
+                <%=result[i].price%>
+            </div>
+        </a>
+    </li>
+    <%}%>

@@ -1,0 +1,29 @@
+<li>
+    <h4>热门</h4>
+    <p class="remen">
+        <%for(var i = 0; i < result.hotcity.length;i++){%>
+            <a href="javascript:void(0)" id="<%=result.hotcity[i].code%>">
+                <%=result.hotcity[i].name%>
+            </a>
+            <%}%>
+    </p>
+</li>
+<li>
+    <h4>拼音</h4>
+    <div class="city_pin">
+        <%for(var prop in result.citylist){%>
+            <a href="javascript:void(0)">
+                <%=prop%>
+            </a>
+            <%}%>
+    </div>
+    <div class="city_city">
+        <%for(var prop in result.citylist){%>
+            <%for(var n = 0; n < result.citylist[prop].length;n++){%>
+                <a href="javascript:void(0)" class="<%=prop%>" id="<%=result.citylist[prop][n].code%>">
+                    <%=result.citylist[prop][n].name%>
+                </a>
+                <%}%>
+                    <%}%>
+    </div>
+</li>

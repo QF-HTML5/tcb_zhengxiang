@@ -1,0 +1,26 @@
+<%for(var i =0;i< shop_data.length;i++){%>
+    <div class="mine3_bottom_1">
+        <figure>
+            <img data-original="<%=shop_data[i].shop_ico%>" alt="">
+            <figcaption>
+                <h3>
+                    <%=shop_data[i].shop_name%> 店铺等级：</h3>
+                <p>主营：
+                    <%=shop_data[i].main%>
+                </p>
+                <p>
+                    <%=shop_data[i].addr_detail%>
+                </p>
+            </figcaption>
+        </figure>
+        <div class="mine3_bottom_right">
+            <div>先行赔付</div>
+            <div>同城帮认证</div>
+            <p>
+                人气：
+                <%=shop_data[i].order_count%>次浏览
+            </p>
+        </div>
+        <a href="<%=shop_data[i].shop_addr%>" class="in">进入店铺</a>
+    </div>
+    <%}%>

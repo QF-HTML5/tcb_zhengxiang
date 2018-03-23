@@ -1,0 +1,14 @@
+<%for(var obj of result){%>
+    <div>
+        <div class="pinm">
+            <span><%=obj.name%> &gt;</span>
+        </div>
+        <%for(var prop of obj.list ){%>
+            <div class="pinm_">
+                <a href="javascript:void(0)">
+                    <%=prop.name%>
+                </a>
+            </div>
+            <%}%>
+    </div>
+    <%}%>

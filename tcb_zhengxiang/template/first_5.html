@@ -1,0 +1,25 @@
+<div class="xiudiannao_top clearfixed">
+    <div class="xiudiannao_top_left">
+        热门问题 ：
+    </div>
+    <%for(var i =0;i< result.hot.length;i++){%>
+        <div class="xiudiannao_top_right">
+            <a href="<%=result.hot[i].url%>" class="lefta">
+                <%=result.hot[i].name%>
+            </a>
+        </div>
+        <%}%>
+</div>
+<div class="xiudiannao_bottom clearfixed">
+    <div class="xiudiannao_bottom_left">
+        其他问题 ：
+    </div>
+    <%for(var i =0;i< result.hot.length;i++){%>
+        <div class="xiudiannao_bottom_right">
+            <a href="<%=result.other[i].url%>" class="lefta">
+                <%=result.other[i].name%>
+            </a>
+
+        </div>
+        <%}%>
+</div>
